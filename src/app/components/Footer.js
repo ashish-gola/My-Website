@@ -7,18 +7,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-800 dark:bg-gray-950 text-white py-12 px-6">
+    <footer className="bg-gray-950 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
 
         {/* Column 1: Brand/Copyright & Slogan */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4 mt-7">
-          <p className="text-xl font-bold text-white">Ashish Gola</p>
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            &copy; {currentYear} Ashish Gola. All rights reserved.
-          </p>
-          <p className="text-md text-gray-300 dark:text-gray-400 font-light max-w-xs leading-relaxed">
-            Crafting digital experiences that make an impact, one pixel at a time.
-          </p>
+          <p className="text-xl font-bold text-white">Ashish Gola</p> 
         </div>
 
         {/* Column 2: Quick Links (Main Navigation) */}
@@ -54,7 +48,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="flex space-x-5 mb-4 mt-7">
             <a
-              href="https://github.com/ashishgola"
+              href="https://github.com/ashish-gola"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
@@ -63,7 +57,7 @@ const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/ashishgoal/"
+              href="https://www.linkedin.com/in/ashish-gola-388833278/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
@@ -72,7 +66,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://twitter.com/ashishgoal"
+              href="https://x.com/ashish_gola55"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
@@ -81,7 +75,7 @@ const Footer = () => {
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="https://www.instagram.com/ashishgoal/"
+              href="https://www.instagram.com/_illegal_coder/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
@@ -90,22 +84,13 @@ const Footer = () => {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://www.youtube.com/@ashishgoal"
+              href="https://www.youtube.com/@illegal_coder"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
               aria-label="YouTube Channel"
             >
               <Youtube className="w-5 h-5" />
-            </a>
-            <a
-              href="https://ashishgoal.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transform hover:scale-110 transition-transform duration-200"
-              aria-label="Personal Website"
-            >
-              <Globe className="w-5 h-5" />
             </a>
           </div>
           {/* Direct Email Link */}
@@ -114,7 +99,7 @@ const Footer = () => {
             className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center mb-2"
           >
             <Mail className="w-4 h-4 mr-2" />
-            contact@ashishgoal.com
+            contact@ashish.com
           </a>
           {/* Phone Number (Optional) */}
           <a
@@ -122,7 +107,7 @@ const Footer = () => {
             className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center"
           >
             <Phone className="w-4 h-4 mr-2" />
-            +91 98765 43210
+            +91 8630715871
           </a>
         </div>
       </div>

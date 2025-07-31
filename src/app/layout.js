@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+      <body className="min-h-screen bg-gray-900 text-white transition-colors duration-300">
         {children}
       </body>
     </html>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-scroll';
 import * as THREE from 'three';
 
 const Hero = () => {
@@ -218,33 +219,35 @@ const Hero = () => {
       <div className={`relative z-10 text-center transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="mb-8">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-4">
-            <span className="inline-block animate-bounce delay-100">Y</span>
-            <span className="inline-block animate-bounce delay-200">o</span>
-            <span className="inline-block animate-bounce delay-300">u</span>
-            <span className="inline-block animate-bounce delay-400">r</span>
-            <span className="inline-block animate-bounce delay-500"> </span>
-            <span className="inline-block animate-bounce delay-600">N</span>
-            <span className="inline-block animate-bounce delay-700">a</span>
-            <span className="inline-block animate-bounce delay-800">m</span>
-            <span className="inline-block animate-bounce delay-900">e</span>
+            Ashish Gola
           </h1>
           
           <div className="overflow-hidden">
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slideUp delay-1000 font-semibold">
-              Creative Developer & Digital Artist
+            Web Developer & AI Enthusiast
             </p>
           </div>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+             className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
+          >
             <span className="relative z-10">Explore My Work</span>
-          </button>
+          </Link>
           
-          <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 hover:shadow-xl">
-            Get In Touch
-          </button>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
+          >
+            <span className="relative z-10">Get In Touch</span>
+          </Link>
         </div>
 
         {/* Floating particles effect */}
