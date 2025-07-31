@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 // --- Component Data ---
 // ** EDIT ALL YOUR INFORMATION IN THIS OBJECT **
@@ -67,11 +68,14 @@ const About = () => {
           {/* Image Column */}
           <div className="relative w-70% max-w-sm mx-auto">
             {!imageError ? (
-              <img
+              <Image
                 src={aboutData.profile.imageUrl}
                 alt="Profile"
+                width={400}
+                height={400}
                 className="rounded-lg object-cover w-full h-auto aspect-square"
                 onError={() => setImageError(true)}
+                priority
               />
             ) : (
               <div className="rounded-lg aspect-square bg-gray-800 flex items-center justify-center">

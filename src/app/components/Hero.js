@@ -29,7 +29,8 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    if (!heroRef.current) return;
+    const currentHero = heroRef.current;
+    if (!currentHero) return;
 
     // Scene setup
     const scene = new THREE.Scene();
@@ -44,7 +45,7 @@ const Hero = () => {
     
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    heroRef.current.appendChild(renderer.domElement);
+    currentHero.appendChild(renderer.domElement);
 
     // Create large colorful geometric shapes
     const shapes = [];
@@ -204,8 +205,8 @@ const Hero = () => {
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('resize', handleResize);
-      if (heroRef.current && renderer.domElement) {
-        heroRef.current.removeChild(renderer.domElement);
+      if (currentHero && renderer.domElement) {
+        currentHero.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };

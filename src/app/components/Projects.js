@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Github,
   ExternalLink,
@@ -253,10 +254,13 @@ const Projects = () => {
           } relative overflow-hidden h-40`}
         >
           {isImageFile ? (
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={400}
+              height={160}
               className="w-full h-full object-cover"
+              priority={isFeatured}
             />
           ) : null}
           <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition-colors" />

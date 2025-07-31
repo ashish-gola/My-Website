@@ -172,7 +172,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
                   <MessageSquare className="w-6 h-6 text-sky-500" />
-                  Let's Connect
+                  Let&apos;s Connect
                 </h3>
                 <p className="text-gray-300 mb-8 leading-relaxed">
                   I am open to opportunities where I can contribute, learn, and grow as a developer. 
@@ -234,7 +234,7 @@ const Contact = () => {
                 <div className="mb-6 p-4 bg-green-900/20 border border-green-800 rounded-lg flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" />
                   <span className="text-green-200 font-medium">
-                    Message sent successfully! I'll get back to you soon.
+                    Message sent successfully! I&apos;ll get back to you soon.
                   </span>
                 </div>
               )}
