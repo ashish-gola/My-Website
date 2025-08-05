@@ -132,7 +132,7 @@ const Experience = () => {
                     Certified for foundational skills in API development and testing using Postman, including creating, managing, and documenting APIs effectively.
                   </p>
                   <a
-                    href="/postman1.jpg"
+                    href="/assets/icons/postman1.jpg"
                     className="text-blue-500 hover:underline text-sm mt-1 block"
                     target="_blank"
                     rel="noopener noreferrer"
