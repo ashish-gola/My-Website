@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Github } from 'lucide-react';
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState('home');
@@ -92,7 +92,18 @@ export default function Header() {
           </div>
 
           {/* Right side controls */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
+            {/* GitHub Profile Link */}
+            <a
+              href="https://github.com/ashish-gola"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-all duration-300 ease-in-out hover:scale-105 group"
+              aria-label="Visit GitHub Profile"
+            >
+              <Github className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
+            </a>
+
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => {

@@ -119,7 +119,26 @@ export default function About() {
           </div>
           <div className="text-center md:text-left">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Hi there!</h1>
-            <p className="text-lg text-gray-300 leading-relaxed">{aboutData.profile.bio}</p>
+            <p className="text-lg text-gray-300 leading-relaxed mb-6">{aboutData.profile.bio}</p>
+            
+            {/* Resume Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+              <a
+                href="/assets/resume/Ashish_Gola_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
+              >
+                <span className="relative z-10">View Resume</span>
+              </a>
+              <a
+                href="/assets/resume/Ashish_Gola_Resume.pdf"
+                download="Ashish_Gola_Resume.pdf"
+                className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
+              >
+                <span className="relative z-10">Download Resume</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-start">
@@ -128,23 +147,23 @@ export default function About() {
             <p className="text-base text-gray-300 leading-relaxed mb-8">{aboutData.careerBio}</p>
             {/* Coding Platforms */}
             <div className="mt-8">
-              <h3 className="text-3xl lg:text-4xl font-semibold mb-4 text-white">Coding Platforms</h3>
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <a href="https://leetcode.com/u/_ashish_gola/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition">
-                  <Image src="/assets/icons/leetcode.png" alt="LeetCode" width={30} height={30} />
-                  <span className="text-white text-lg font-medium">LeetCode</span>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 text-white">Coding Platforms</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
+                <a href="https://leetcode.com/u/_ashish_gola/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 sm:p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                  <Image src="/assets/icons/leetcode.png" alt="LeetCode" width={24} height={24} className="sm:w-[30px] sm:h-[30px]" />
+                  <span className="text-white text-sm sm:text-lg font-medium">LeetCode</span>
                 </a>
-                <a href="https://www.geeksforgeeks.org/user/golaash1veq/?_gl=1*n7qoko*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjw18bEBhCBARIsAKuAFEa4owfh_F1Rfdw17i3P1CjA_QL0JVdfZk7eFv8g7Gy4w8azmDMfS90aAmpUEALw_wcB&gbraid=0AAAAAC9yBkAkYAk2EiA3G403_GIx-urrU" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition">
-                  <Image src="/assets/icons/gfg.png" alt="GeeksforGeeks" width={30} height={30} />
-                  <span className="text-white text-lg font-medium">GeeksforGeeks</span>
+                <a href="https://www.geeksforgeeks.org/user/golaash1veq/?_gl=1*n7qoko*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjw18bEBhCBARIsAKuAFEa4owfh_F1Rfdw17i3P1CjA_QL0JVdfZk7eFv8g7Gy4w8azmDMfS90aAmpUEALw_wcB&gbraid=0AAAAAC9yBkAkYAk2EiA3G403_GIx-urrU" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 sm:p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                  <Image src="/assets/icons/gfg.png" alt="GeeksforGeeks" width={24} height={24} className="sm:w-[30px] sm:h-[30px]" />
+                  <span className="text-white text-sm sm:text-lg font-medium">GeeksforGeeks</span>
                 </a>
-                <a href="https://www.codechef.com/users/sharp_field_12" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition">
-                  <Image src="/assets/icons/codechef.png" alt="codechef" width={30} height={30} />
-                  <span className="text-white text-lg font-medium">CodeChef</span>
+                <a href="https://www.codechef.com/users/sharp_field_12" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 sm:p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                  <Image src="/assets/icons/codechef.png" alt="codechef" width={24} height={24} className="sm:w-[30px] sm:h-[30px]" />
+                  <span className="text-white text-sm sm:text-lg font-medium">CodeChef</span>
                 </a>
-                <a href="https://www.hackerrank.com/profile/ashishgola12jns1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition">
-                  <Image src="/assets/icons/hackerrank.png" alt="hackerrank" width={30} height={30} />
-                  <span className="text-white text-lg font-medium">HackerRank</span>
+                <a href="https://www.hackerrank.com/profile/ashishgola12jns1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-gray-800 p-3 sm:p-5 rounded-lg border border-gray-700 hover:border-sky-500 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                  <Image src="/assets/icons/hackerrank.png" alt="hackerrank" width={24} height={24} className="sm:w-[30px] sm:h-[30px]" />
+                  <span className="text-white text-sm sm:text-lg font-medium">HackerRank</span>
                 </a>
               </div>
             </div>

@@ -32,6 +32,18 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">More Info</h3>
           <ul className="flex flex-col space-y-3">
             <li>
+              <a 
+                href="/assets/resume/Ashish_Gola_Resume.pdf" 
+                download="Ashish_Gola_Resume.pdf"
+                className="text-sky-500 hover:text-sky-400 transition-colors duration-200 text-sm font-medium flex items-center"
+              >
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                Download Resume
+              </a>
+            </li>
+            <li>
               <a href="#privacy-policy" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">Privacy Policy</a>
             </li>
             <li>
