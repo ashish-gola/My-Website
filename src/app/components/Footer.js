@@ -33,7 +33,7 @@ const Footer = () => {
           <ul className="flex flex-col space-y-3">
             <li>
               <a 
-                href="/assets/resume/Ashish_Gola_Resume.pdf" 
+                href="/assets/resume/autoCV (1).pdf" 
                 download="Ashish_Gola_Resume.pdf"
                 className="text-sky-500 hover:text-sky-400 transition-colors duration-200 text-sm font-medium flex items-center"
               >
