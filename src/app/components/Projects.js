@@ -58,8 +58,8 @@ const Projects = () => {
     image: (
       <Image
         src="/assets/projects/ai-blog.png"
-        width={500}
-        height={300}
+        width={400}
+        height={160}
         alt="AI Blog"
       />
     ),
