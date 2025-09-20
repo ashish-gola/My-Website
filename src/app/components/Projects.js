@@ -32,6 +32,7 @@ const Projects = () => {
       "ClipDrop API",
       "JWT",
       "Tailwind CSS",
+      "Razorpay",
     ],
     category: "Full Stack",
     featured: true,
