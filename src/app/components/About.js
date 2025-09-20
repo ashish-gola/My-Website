@@ -124,7 +124,7 @@ export default function About() {
             {/* Resume Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
               <a
-                href="/assets/resume/autoCV (1).pdf"
+                href="/assets/resume/ResumeAuto.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
@@ -132,7 +132,7 @@ export default function About() {
                 <span className="relative z-10">View Resume</span>
               </a>
               <a
-                href="/assets/resume/autoCV (1).pdf"
+                href="/assets/resume/ResumeAuto.pdf"
                 download="Ashish_Gola_Resume.pdf"
                 className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full font-semibold text-lg shadow-xl hover:bg-sky-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer"
               >
