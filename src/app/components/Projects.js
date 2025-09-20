@@ -55,14 +55,7 @@ const Projects = () => {
     ],
     category: "Full Stack",
     featured: true,
-    image: (
-      <Image
-        src="/assets/projects/ai-blog.png"
-        width={400}
-        height={160}
-        alt="AI Blog"
-      />
-    ),
+    image: "/assets/projects/Ai-Blog.png",
     githubLink: "https://github.com/ashish-gola/AI-Powered-Blog-App",
     liveLink: "https://ai-powered-blog-app-sigma.vercel.app/",
   },
