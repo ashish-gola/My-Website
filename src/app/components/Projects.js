@@ -55,7 +55,14 @@ const Projects = () => {
     ],
     category: "Full Stack",
     featured: true,
-    image: "/assets/projects/ai-blog.png",
+    image: (
+      <Image
+        src="/assets/projects/ai-blog.png"
+        width={500}
+        height={300}
+        alt="AI Blog"
+      />
+    ),
     githubLink: "https://github.com/ashish-gola/AI-Powered-Blog-App",
     liveLink: "https://ai-powered-blog-app-sigma.vercel.app/",
   },
@@ -77,7 +84,14 @@ const Projects = () => {
     ],
     category: "Full Stack",
     featured: true,
-    image: "/assets/projects/ai-trip-planner.png",
+    image: (
+      <Image
+        src="/assets/projects/Ai-Trip-Planner.png"
+        width={400}
+        height={160}
+        alt="AI Trip Planner"
+      />
+    ),
     githubLink: "https://github.com/ashish-gola/AI-Trip-Planner",
     liveLink: "https://ai-trip-planner-beige-nine.vercel.app/",
     },
@@ -306,13 +320,13 @@ const Projects = () => {
   };
 
   const ProjectCard = ({ project, isFeatured = false }) => {
-    const isImageFile = project.image.startsWith("/");
+  const isImageFile = typeof project.image === "string" && project.image.startsWith("/");
 
     return (
       <div className="rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group bg-gray-800">
         <div
-          className={`${
-            isImageFile ? "bg-gray-700" : project.image
+          className={`$ {
+            isImageFile ? "bg-gray-700" : ""
           } relative overflow-hidden h-40`}
         >
           {isImageFile ? (
@@ -324,7 +338,9 @@ const Projects = () => {
               className="w-full h-full object-cover"
               priority={isFeatured}
             />
-          ) : null}
+          ) :
+            (typeof project.image === "object" && project.image)
+          }
           <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition-colors" />
           <div className="absolute top-4 left-4 flex items-center gap-2">
             <div className="bg-gray-900/90 px-3 py-1 rounded-full flex items-center gap-1.5 text-white text-sm font-medium">
